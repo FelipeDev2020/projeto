@@ -4,3 +4,4 @@ let maca = 20
 total = laranja + maca
 
 console.log(total)
+console.log(laranja)
