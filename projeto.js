@@ -5,3 +5,4 @@ total = laranja + maca
 
 console.log(total)
 console.log(laranja)
+console.log(maca)
