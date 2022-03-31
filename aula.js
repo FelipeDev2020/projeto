@@ -277,28 +277,51 @@
 // }
 
 
-exibirNumerosPrimos(15);
+// exibirNumerosPrimos(15);
 
-function exibirNumerosPrimos(limite){
-    for(let numero = 2; numero <= limite; numero++){
-        let primo = true;
+// function exibirNumerosPrimos(limite){
+//     for(let numero = 2; numero <= limite; numero++){
+//         let primo = true;
 
-        for(let divisor = 2; divisor < numero; divisor++){
-            if(numero % divisor === 0){
-                primo = false;
-                break;
-            }
-        }
+//         for(let divisor = 2; divisor < numero; divisor++){
+//             if(numero % divisor === 0){
+//                 primo = false;
+//                 break;
+//             }
+//         }
 
-        if(primo) console.log(numero);
+//         if(primo) console.log(numero);
+//     }
+// }
+
+
+const celular = {
+    marcaCelular: 'asus',
+    tamanhoTela: {
+        vertical: 155,
+        horizontal: 75
+    },
+    capacidadeBateria: 5000,
+    ligar: function() {
+        console.log("Fazendo ligação...");
     }
 }
 
+//* **Factory Function  (Função de Fábrica) */
+function criarCelular(marcaCelular, tamanhoTela, capacidadeBateria){
+    return {
+        marcaCelular,
+        tamanhoTela,
+        capacidadeBateria,
+        ligar() {
+            console.log("Fazendo ligação...");
+        }
+    }
+}
 
+const celular1 = criarCelular('Zenfone', 5.5, 6000);
 
-
-
-
+console.log(celular1);
 
 
 
