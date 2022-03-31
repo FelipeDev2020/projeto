@@ -209,6 +209,101 @@
 
 // 1 hora : 59 minutos
 
+// const filme = {
+//     titulo: 'vingadores',
+//     ano: 2018,
+//     diretor: 'Robin',
+//     personagem: 'Thor'
+// }
+
+// exibirPropriedades(filme);
+
+// function exibirPropriedades(obj){
+//     for (prop in obj)
+//         if(typeof obj[prop] === 'string')
+//             console.log(prop, obj[prop])
+// }
+
+// somar(10);
+
+// function somar(limite){
+//     let r = 0;
+//     for(let i=1; i<=limite; i++)
+//         if(i % 3 === 0)
+//             r += i;
+//         else if(i % 5 === 0)
+//             r += i;
+//     console.log(r)
+// }
+
+// const array = [70, 70, 80];
+
+// console.log(mediaDoAluno(array));
+
+// function mediaDoAluno(notas){
+//     const total = calcularMedia(notas);
+//    if (total < 59) return 'F';
+//    if (total < 69) return 'D';
+//    if (total < 79) return 'C';
+//    if (total < 89) return 'B';
+//    return 'A'
+// }
+
+// function calcularMedia(array){
+//     let total = 0;
+//     for(let valor in array){
+//         total += array[valor];
+//     }
+//     return  total / array.length ;
+// }
+
+// exibirAsteriscos(5);
+
+// function exibirAsteriscos(linhas){
+//     // let estrela = ' ';
+//     // for(let i=0; i < linhas; i++){
+//     //     estrela = estrela + '*';
+//     //     console.log(estrela);
+//     // }
+
+//     //outra maneira de fazer
+//     for(let linha = 1; linha <= linhas; linha++){
+//         let padrao = '';
+//         for(let i = 0; i < linha; i++){
+//             padrao += '*';
+//         }
+//         console.log(padrao);
+//     }
+// }
+
+
+exibirNumerosPrimos(15);
+
+function exibirNumerosPrimos(limite){
+    for(let numero = 2; numero <= limite; numero++){
+        let primo = true;
+
+        for(let divisor = 2; divisor < numero; divisor++){
+            if(numero % divisor === 0){
+                primo = false;
+                break;
+            }
+        }
+
+        if(primo) console.log(numero);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
