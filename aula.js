@@ -295,33 +295,99 @@
 // }
 
 
-const celular = {
-    marcaCelular: 'asus',
-    tamanhoTela: {
-        vertical: 155,
-        horizontal: 75
-    },
-    capacidadeBateria: 5000,
-    ligar: function() {
-        console.log("Fazendo ligação...");
-    }
-}
+// const celular = {
+//     marcaCelular: 'asus',
+//     tamanhoTela: {
+//         vertical: 155,
+//         horizontal: 75
+//     },
+//     capacidadeBateria: 5000,
+//     ligar: function() {
+//         console.log("Fazendo ligação...");
+//     }
+// }
 
-//* **Factory Function  (Função de Fábrica) */
-function criarCelular(marcaCelular, tamanhoTela, capacidadeBateria){
-    return {
-        marcaCelular,
-        tamanhoTela,
-        capacidadeBateria,
-        ligar() {
-            console.log("Fazendo ligação...");
-        }
-    }
-}
+// //* **Factory Function  (Função de Fábrica) */
+// function criarCelular(marcaCelular, tamanhoTela, capacidadeBateria){
+//     return {
+//         marcaCelular,
+//         tamanhoTela,
+//         capacidadeBateria,
+//         ligar() {
+//             console.log("Fazendo ligação...");
+//         }
+//     }
+// }
 
-const celular1 = criarCelular('Zenfone', 5.5, 6000);
+// const celular1 = criarCelular('Zenfone', 5.5, 6000);
 
-console.log(celular1);
+// console.log(celular1);
+
+
+// function Celular(marcaCelular, tamanhoTela, capacidadeBateria){
+//     this.marcaCelular = marcaCelular,
+//     this.tamanhoTela = tamanhoTela,
+//     this.capacidadeBateria = capacidadeBateria,
+//     this.ligar = function() {
+//         console.log("Fazendo Ligação...");
+//     }
+// }
+
+// const celular = new Celular('asus', 5.5, 5000);
+
+// console.log(celular);
+
+
+// function Historia(nome, hist, perigocidade){
+//     this.nome = nome,
+//     this.hist = hist,
+//     this.perigocidade = perigocidade,
+//     this.mostrar  = function(){
+//         console.log(`Titulo: ${this.nome} Nivel: ${this.perigocidade}`);
+//     }
+// }
+
+
+// const historia = new Historia('Sleeman', 'Monstro terrivel que persegue crianças na rua', 'altamente perigoso');
+// console.log(historia);
+
+
+// const mouse = {
+//     cor: 'red',
+//     marcar: 'dazz'
+// }
+
+// mouse.velocidade = 5000;
+// mouse.trocarDpi = function(){
+//     console.log('mudando DPI');
+// }
+
+// delete mouse.velocidade;
+// delete mouse.trocarDpi;
+// console.log(mouse);
+
+
+// const celular = {
+//     marcaCelular: 'asus',
+//     tamanhoTela: {
+//         vertical: 155,
+//         horizontal: 75
+//     },
+//     ligar: function (){
+//         console.log('Fazendo Ligação...');
+//     }
+// }
+
+// const novoObjeto = Object.assign({
+//     bateria: 5000
+// }, celular);
+// console.log(novoObjeto)
+
+// let objeto2 = [5];
+
+// objeto2[1] = {...celular};
+// objeto2[2] = {...celular};
+// console.log(objeto2[1], objeto2[2]);
 
 
 
