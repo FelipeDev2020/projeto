@@ -389,8 +389,10 @@
 // objeto2[2] = {...celular};
 // console.log(objeto2[1], objeto2[2]);
 
-
-
+numero = 5
+for(let i=0; i <= 10; i++){
+    console.log(`${numero} X ${i} = ${(numero * i)}`)
+}
 
 
 

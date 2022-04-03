@@ -8,6 +8,28 @@
     <script src="aula.js"></script>
 </head>
 <body>
-    <h1>Dev aprender</h1>
+    <button onclick="mostrarTabuada()">Mostrar Tabuada</button>
+    <button onclick="limpar()">Limpar Tabuada</button>
+    <div id="output"></div>
+
+    <script>
+        const output = document.getElementById("output");
+        let numero = Number(prompt("Coloque um número"));
+        let tabuada = " "
+
+        function mostrarTabuada(){
+            for(let i=0; i <= 10; i++){
+                tabuada += (`${numero} X ${i} = ${(numero * i)} <br>`)
+            }
+
+            output.innerHTML = tabuada
+        }
+
+        function limpar(){
+            tabuada = " "
+            output.innerHTML = tabuada
+        }
+
+    </script>
 </body>
 </html>
